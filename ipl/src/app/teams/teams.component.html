@@ -1,0 +1,10 @@
+<ul class="players">
+  <button (click)="addPlayer()">Submit New Contact</button>
+  <li *ngFor="let player of Players">
+    <h3>{{player.name}}</h3>
+    <p>{{player.website}}</p>
+    <p>{{player.phone}}</p>
+    <img src="{{player.image}}" alt="playImg">
+  </li>
+</ul>
+
